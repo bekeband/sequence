@@ -1,0 +1,25 @@
+{
+  "name": "sequence",
+  "displayName": "SEQUENCE",
+  "description": "DeltaV sequence highliting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "seq",
+      "aliases": ["DVSEQ", "seq"],
+      "extensions": ["fhx"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "seq",
+      "scopeName": "source.seq",
+      "path": "./syntaxes/seq.tmLanguage.json"
+    }]
+  }
+}
